@@ -14,7 +14,7 @@ var scores = {
 
 var playerName;
 
-//Poniżej opisuję wybór przycisków przez gracza
+//wybór przycisków przez gracza
 var elemOutput = document.querySelector('#output'); // pierwszy znaleziony
 var playerResult = document.querySelector('#playerResultContainer');
 var pcResult = document.querySelector('#pcResultContainer');
@@ -23,7 +23,7 @@ var pickRock = document.getElementById(ROCK);
 var pickPaper = document.getElementById(PAPER);
 var pickScissors = document.getElementById(SCISSORS);
 
-// Nasłuchiwanie przycisków wyboru dla gracza
+// przycisk wyboru dla gracza
 pickRock.addEventListener('click', function () {
     playerMove(ROCK)
 });
@@ -36,7 +36,7 @@ pickScissors.addEventListener('click', function () {
     playerMove(SCISSORS)
 });
 
-// OPIS DZIAŁANIA PRZYCISKU NEWGAME
+//PRZYCISK NEWGAME
 
 document.querySelector('#newGame_layer button')
   .addEventListener('click', function(){
@@ -83,7 +83,7 @@ function getPCMove() {
     case 2: return PAPER;
   }
 }
-// OPiS FUNKCJI SPRAWDZAJĄCEJ WYNIK ROZGRYWKI
+// FUNKCJA SPRAWDZAJĄCA WYNIK ROZGRYWKI
 function resultOfTheGame(){
   if (scores.pc === 5){
   result.innerHTML = 'Wygrał komputer';
@@ -105,7 +105,7 @@ function resultOfTheGame(){
   }
 }
 
-// Opis funkcji playerMove
+// funkcja playerMove
 var playerMove = function(playerPick) {
   var winner = COMPUTER;
   var winnerLabel = 'Komputer'
