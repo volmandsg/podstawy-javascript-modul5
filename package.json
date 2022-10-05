@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/volmandsg/javascript-prework/issues"
   },
-  "homepage": "https://github.com/volmandsg/javascript-prework#readme"
+  "homepage": "https://github.com/volmandsg/javascript-prework#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.10"
+  }
 }
